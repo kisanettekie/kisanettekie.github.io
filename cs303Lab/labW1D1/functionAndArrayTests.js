@@ -1,4 +1,8 @@
 "use strict";
+
+
+const rec = require("./functions.js");
+
 /* global assert maxOfThree sum multiply findLongestWord reverseArray reverseArrayInPlace scoreExams */
 
 /* 1.	1.	Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.  */
@@ -80,3 +84,5 @@ describe("score exam", function () {
         assert.deepEqual(scoreExams(studentAnswers, correctAnswers), [2, 2, 2]);
     });
 });
+
+
