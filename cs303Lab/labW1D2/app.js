@@ -53,6 +53,9 @@ authors.push(book.author);
  }
 return authors;
 }
+/**
+ * @returns {Array} of all the ids in library
+ */
 function findIDs() {
 const ides = [];
 for (const ids of library) {
