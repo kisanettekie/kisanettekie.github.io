@@ -98,7 +98,7 @@ function findLongestWord(str){
         return newArr;
             
         }
-        //console.log(reverseArrayInPlace(["A", "B", "C", "D"]));
+    //console.log(reverseArrayInPlace(["A", "B", "C", "D"]));
 
 
 
