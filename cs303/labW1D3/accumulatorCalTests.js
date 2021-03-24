@@ -1,6 +1,13 @@
 "use strict";
 /* global assert Accumulator */
 
+/*    
+const assert = require("assert");  //always need this with node
+const myExports = require("./app.js");
+const Accumulator = myExports.Accumulator; //do this for all of the functions used in the Mocha tests
+const Calculator = myExports.Calculator; //do this for all of the functions used in the Mocha tests
+*/
+
 /*
 Write a constructor function Accumulator(initialValue, increment).  The object it creates should:
 •	Store the current accumulated value in a property currentValue.  The constructor should set this to be initialValue.
@@ -32,7 +39,7 @@ describe("accumulator", function () {
 
 });
 
-"use strict";
+
 
 /* global assert Calculator */
 
