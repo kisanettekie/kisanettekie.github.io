@@ -3,7 +3,7 @@
 
 
 
-module.exports={ucFirst, checkSpam,truncate,extractCurrencyValue,getMaxSubSum,camelize}
+//module.exports={ucFirst, checkSpam,truncate,extractCurrencyValue,getMaxSubSum,camelize}
 /**
   * @param {String} str 
   * @ return string return the first letter to upper case
