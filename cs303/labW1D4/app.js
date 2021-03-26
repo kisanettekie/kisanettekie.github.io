@@ -1,6 +1,6 @@
 "use strict";
 
-const { clear } = require("node:console");
+
 
 
 module.exports={ucFirst, checkSpam,truncate,extractCurrencyValue,getMaxSubSum,camelize}
