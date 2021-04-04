@@ -1,5 +1,5 @@
 "use strict"
-module.exports = {myFilter,myFilterArra,byField,makeArmy};
+//module.exports = {myFilter,myFilterArra,byField,makeArmy};
 // /**
 //  * 
 //  */
