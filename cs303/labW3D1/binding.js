@@ -52,6 +52,8 @@ function propertyAfterBind() {
     return (bound.test);
 
 }
+
+
 //The answer: undefined.The result of bind is another object. It does not have the test property
 /*
 Fix a function that loses "this"

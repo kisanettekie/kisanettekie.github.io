@@ -2106,21 +2106,21 @@ and see if your myMap and myReduce will work with the skeleton code there.
 // console.log(foo());
 
 
-"use strict";
+// "use strict";
 
-let list = {
-    value: 1,
-    next: {
-      value: 2,
-      next: {
-        value: 3,
-        next: {
-          value: 4,
-          next: null
-        }
-      }
-    }
-  };
+// let list = {
+//     value: 1,
+//     next: {
+//       value: 2,
+//       next: {
+//         value: 3,
+//         next: {
+//           value: 4,
+//           next: null
+//         }
+//       }
+//     }
+//   };
   /* insert a node with value 3.5 after the node with value 3 */
 
   /* find node with value 3 */
@@ -2148,4 +2148,312 @@ let list = {
 
   // console.log(sum(1)(2)); //3
 
+  // setTimeout(sayHi(), 3000); 
+  // function sayHi(){console.log("hello")}
+
+
   
+//let animal = { eats: true };
+// function Rabbit(name) { 
+//   this.name = name;
+// }
+// Rabbit.prototype = animal;
+// let rabbit = new Rabbit("White Rabbit");
+
+// const rabbit = { 
+//   name: "White Rabbit",
+//   __proto__:animal
+// } 
+// console.log( rabbit.eats ); // true
+
+
+
+// function User(firstname, lastname, birthDate) {
+//   this.firstname = firstname;
+//   this.lastname = lastname;
+//   this.birthDate = birthDate;
+//   }
+//   let user1 = new User('John', 'Smith', new Date('2000-10-01'));
+//   let user2 = new User('Edward', 'Hopkins', new Date('1991-11-14'));
+//   function getFullName() { return this.firstname + ' ' + this.lastname;}
+//   function getAge() {return new Date().getFullYear() - this.birthDate.getFullYear();}
+//   //complete the code so that the above functions reside in a single object and are inherited by all User
+//   //objects that are created using User as a constructor function.
+
+//   User.prototype.getAge=getAge;
+//   User.prototype.getFullName=getFullName;
+  
+//   console.log(user1.getFullName()); //John Smith
+//   console.log(user1.getAge()); //21
+
+
+
+// let animal = {
+//   eats: true
+//   };
+//   function Dog(name) {
+//   this.name = name;
+//   }
+//   Dog.prototype = animal;
+  
+//   let snoopy = new Dog("Snoopy");
+//   snoopy.__proto__ == animal
+//  console.log( snoopy.eats ); // true
+
+
+
+
+// function makeCounter() {
+//   let count = 0;
+//   return function() { 
+//     return count++; 
+//   };
+//   }
+  /*
+  Now modify makeCounter so that the callback it returns 
+  accepts an argument for the increment value. It should also return 
+  a warning string whenever it has been incremented by a value greater than 3. E.g.,
+  */
+  // const mycounter = makeCounter();
+  
+  // myCounter(10); //will return "Warning: increment was by value greater than 3"
+  
+  /*where x is the current count value as normal.
+  
+  Also, your counter should still handle the case where it is called 
+  with no argument and increments by 1 as normal.
+  */
+
+  // function makeCounter() {
+  //   let count = 0;
+  //   return function() { 
+  //     return count++; 
+  //   };
+  //   }
+
+  //   function cbk(arg){
+  //     let count=0;
+  //     if(count >3){
+  //       console.log("Warning: increment was by value greater than 3")
+  //       return count;
+  //     }
+  //   }
+
+
+  //   const myCounter = makeCounter();
+  //   myCounter(10);
+
+
+  // function User(firstName, lastName){
+  //   this.firstName= firstName;
+  //   this.lastName= lastName;
+  // }
+  // let user1= Object.create(User.prototype)
+  // console.log(User);
+
+//   function Calculator(n1, n2){
+//     this.num1= n1;
+//     this.num2= n2;
+//   }
+//   Calculator.prototype.add = function(){
+//     return this.num1 + this.num2;
+//   }
+//   Calculator.prototype.sub = function(){
+//     return this.num1 - this.num2;
+//   }
+//   Calculator.prototype.divide = function(){
+//     return this.num1 / this.num2;
+//   }
+//   Calculator.prototype.multiply = function(){
+//     return this.num1 * this.num2;
+//   }
+// const calc = new  Calculator(2,5);
+// console.log(calc.add());
+
+// let calc = Object.create(Calculator.prototype);
+// calc.constructor(10,2);
+// console.log(cal.add())
+
+
+// let calc = new Calculator(10,2);
+
+// let animal = {
+//   walk() {
+//     if (!this.isSleeping) {
+//       alert(`I walk`);
+//     }
+//   },
+//   sleep() {
+//     this.isSleeping = true;
+//   }
+// };
+
+// let rabbit = {
+//   name: "White Rabbit",
+//   __proto__: animal
+// };
+
+// // modifies rabbit.isSleeping
+// rabbit.sleep();
+
+
+//console.log(rabbit.isSleeping); // true
+//console.log(animal.isSleeping); 
+
+// let animal = {
+//   jumps: null
+// };
+// let rabbit = {
+//   __proto__: animal,
+//   jumps: true
+// };
+
+// console.log( rabbit.jumps ); // ? (1)  true
+
+// delete rabbit.jumps;
+
+// console.log( rabbit.jumps ); // ? (2) null
+
+// delete animal.jumps;  null
+
+// console.log( rabbit.jumps ); // ? (3) undefined 
+
+
+// let head = {
+//   glasses: 1
+// };
+
+// let table = {
+//   pen: 3,
+//   __proto__:head
+// };
+
+// let bed = {
+//   sheet: 1,
+//   pillow: 2,
+//   __proto__:table
+// };
+
+// let pockets = {
+//   money: 2000,
+//   __proto__: bed 
+// };
+
+// console.log(pockets.pen);
+// console.log(bed.glasses);
+// console.log(table.money)
+
+
+// let animal = {
+//   eat() {
+//     this.full = true;
+//   }
+// };
+
+// let rabbit = {
+//   __proto__: animal
+// };
+
+// console.log(rabbit.eat());
+
+// let hamster = {
+//   stomach: [],
+
+//   eat(food) {
+//     this.stomach.push(food);
+//   }
+// };
+
+// let speedy = {
+//   __proto__: hamster
+// };
+
+// let lazy = {
+//   __proto__: hamster
+// };
+
+// // This one found the food
+// speedy.eat("apple");
+// console.log( speedy.stomach ); // apple
+
+// // This one also has it, why? fix please.
+// console.log( lazy.stomach ); // apple
+
+
+// let animal = {
+//   eats: true
+
+// };
+// function Rabbit(name){
+//   this.name = name;
+// }
+// Rabbit.prototype = animal;
+
+
+// let rab = new Rabbit ("white");
+// console.log(rab.eats);
+// console.log(rab.name);
+
+
+// function Rabbit(name){
+//   this.name = name;
+//   console.log(name);
+// }
+// let rabbit = new Rabbit("white one");
+// let rab1 = new rabbit.constructor("yellow one");
+// console.log(rabbit);
+// console.log(rab1);
+
+// function Rabbit() {}
+// Rabbit.prototype = {
+//   eats: true
+// };
+
+// let rabbit = new Rabbit();
+
+// Rabbit.prototype.eats = false;
+
+// console.log( rabbit.eats ); // ?  false
+
+// function Rabbit() {}
+// Rabbit.prototype = {
+//   eats: true
+// };
+
+// let rabbit = new Rabbit();
+// rabbit.eats= "yes";
+// console.log(rabbit.eats)
+
+
+// delete Rabbit.prototype.eats;
+
+// console.log( rabbit.eats ); // ?
+
+// function Rabbit() {}
+// Rabbit.prototype = {
+//   eats: true
+// };
+
+// let rabbit = new Rabbit();
+
+// delete Rabbit.prototype.eats;
+
+// console.log( rabbit.eats ); // ?
+
+
+// function Rabbit(name) {
+//   this.name = name;
+//}
+// Rabbit.prototype.sayHi = function() {
+//   console.log(this.name);
+//};
+//let fluf1= new Rabbit("Fluffy");
+//fluf1.sayHi();
+// Rabbit.prototype.sayHi();
+// fluf1.__proto__.sayHi();
+
+class User {
+  constructor() {}
+}
+
+console.log(typeof User);

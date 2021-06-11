@@ -16,7 +16,7 @@
      }
  }
 
- console.log(sum(3))
+ //console.log(sum(3))
 /**
  * 
  * @param {number} num 
